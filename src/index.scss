@@ -1,0 +1,313 @@
+$main-font: "Open Sans", sans-serif;
+$defoult-font: "Roboto";
+$main-color: #550dc9;
+$defoult-color: #373737;
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  height: 100%;
+}
+.App {
+  position: relative;
+  background: #ffffff;
+}
+
+.navbar {
+  position: absolute;
+  height: 64px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  position: absolute;
+  width: 52px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+}
+
+.main-logo {
+  position: absolute;
+  width: 18.13px;
+  height: 33px;
+  left: 16px;
+  top: 15px;
+}
+
+.main-logo p {
+  position: absolute;
+  width: 17px;
+  height: 7px;
+  left: 1px;
+  top: 26px;
+  font: {
+    family: $defoult-font;
+    style: normal;
+    weight: bold;
+    size: 6px;
+  }
+  line-height: 7px;
+  color: $defoult-color;
+}
+
+.main-logo img {
+  width: 18.13px;
+  height: 24px;
+  left: 0;
+  top: 0;
+}
+
+.tasks {
+  position: absolute;
+  width: 45px;
+  height: 22px;
+  left: 76px;
+  top: 10px;
+  font : {
+    style: normal;
+    weight: bold;
+    size: 16px;
+  }
+  line-height: 22px;
+  color: #000000;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 166px;
+  height: 32px;
+  right: 24px;
+  bottom: 16px;
+}
+
+.user-logo {
+  position: static;
+  width: 32px;
+  height: 32px;
+  left: 113px;
+  top: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.user p {
+  position: static;
+  width: 105px;
+  height: 19px;
+  left: 0px;
+  top: 6.5px;
+  font: {
+    style: normal;
+    weight: normal;
+    size: 14px;
+  }
+  line-height: 19px;
+  color: $defoult-color;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.vector {
+  order: 2;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.sidebar {
+  position: absolute;
+  width: 52px;
+  height: 900px;
+  left: 0px;
+  top: 64px;
+  background: $main-color;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+.sidemenu {
+  width: 52px;
+  height: 32px;
+  margin-top: 19px;
+}
+
+.content {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 64px;
+}
+
+.input_task {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 75px 0px;
+}
+
+.all_tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 206px;
+  left: 0px;
+  top: 88px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.add_task {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+input[type="text"] {
+  height: 40px;
+  width: 1170px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+  font: {
+    family: $main-font;
+    style: normal;
+    weight: normal;
+    size: 14px;
+  }
+  line-height: 19px;
+  color: #cacaca;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+input[type="submit"] {
+  height: 40px;
+  width: 50px;
+  border-radius: 4px;
+  margin-left: 8px;
+  background: $main-color;
+}
+
+input[value="Add"] {
+  font: {
+    family: $main-font;
+    size: 14px;
+  }
+  color: #ffffff;
+}
+
+.total {
+  padding: 10px;
+  width: 50px;
+  height: 24px;
+  background: #fef6ff;
+  border-radius: 4px;
+  margin: 0px;
+
+  font: {
+    style: normal;
+    weight: normal;
+    size: 12px;
+  }
+  line-height: 16px;
+  color: $main-color;
+  margin: 10px 10px;
+}
+
+.all_tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  height: 206px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-top: -28px;
+}
+
+.all_tasks li {
+  padding: 16px 12px;
+  width: 1200px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  flex-grow: 0;
+  margin: 16px -35px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.to_do {
+  width: 67px;
+  height: 22px;
+  font: {
+    style: normal;
+    weight: 600;
+    size: 16px;
+  }
+  line-height: 22px;
+  color: $defoult-color;
+  margin: -20px 0 10px 10px;
+}
+
+.task_actions img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 8px;
+}
+
+.title {
+  display: flex;
+}
+
+.task_actions {
+  margin: -20px 0 0 91%;
+}
+
+.completed_tasks > .to_do {
+  width: 108px;
+  height: 22px;
+  margin: 80px 0 0 0;
+}
